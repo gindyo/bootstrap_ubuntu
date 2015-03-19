@@ -37,8 +37,9 @@ echo ###########################################################
 sudo apt-get -y install nodejs
 gem install rails -v 4.2.0
 rbenv rehash
+sudo apt-get remove -y --purge  postgresql*
 sudo apt-get install -y postgresql-common
-sudo apt-get install -y postgresql-9.3 libpq-dev
+sudo apt-get install -y postgresql-9.4 libpq-dev
 gem install hub
 gem install bundler
 cd /home/dimitar/ 
